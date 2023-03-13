@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* font-family: "Poppins", sans-serif;
+font-family: "Raleway", sans-serif;
+font-family: "Roboto Mono", monospace;
+font-family: "Work Sans", sans-serif; */
+
+:root {
+  --color-primary: white;
+  --color-secondary: rgb(26, 26, 26);
+  --color-heading: rgb(0, 130, 130);
+  --color-heading-secondary: purple;
+  --transiton-hover-duration: all 0.5s;
+  --box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.422);
+  --text-shadow: 0rem 0.2rem 0.4rem black;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background-image: url("https://images.pexels.com/photos/1670187/pexels-photo-1670187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: 560px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url("https://images.pexels.com/photos/2335126/pexels-photo-2335126.jpeg");
+    background-size: cover;
+  }
+}
+
+body h1 {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+body h2 {
+  /* font-family: "Roboto Mono", monospace; */
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+/* Navbar */
+
+nav {
+  background-color: rgba(0, 0, 0, 0.489);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main-icon-animation {
+  animation-name: main-icon-animato;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes main-icon-animato {
+  0% {
+    border-radius: 2rem;
+    transform: rotate(0);
+  }
+  50% {
+    transform: translateX(800%) rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    border-radius: 2rem;
+  }
+}
+
+nav ul li {
+  text-shadow: 0rem 0.2rem 0.4rem black;
+}
+nav ul a {
+  transition: all 0.2s;
+}
+nav ul a:hover {
+  color: rgb(0, 102, 255);
+}
+
+.menu-btn-animation {
+  animation-name: menu-btn-rotate;
+  animation-duration: 0.5s;
+}
+
+@keyframes menu-btn-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.menu-container-animation {
+  animation-name: menu-container-animation;
+  animation-duration: 0.5s;
+}
+
+@keyframes menu-container-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: (1);
+  }
+}
+
+.tech-dropdown-icon-toggle {
+  transform: rotate(180deg);
+}
+@media (min-width: 1024px) {
+  nav {
+    background-color: transparent;
+  }
+  nav ul li {
+    text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.49);
+  }
+  /* nav ul a::after {
+    content: "";
+    position: absolute;
+    width: 4%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    background-color: rgb(0, 102, 255);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-in-out;
+  }
+
+  nav ul a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  } */
+}
+
+/* hero */
+
+.hero {
+  height: 80vh;
+}
+.hero p {
+  text-shadow: var(--text-shadow);
+}
+.hero-btn {
+  background-color: white;
+  color: black;
+  padding: 0 2rem;
+  transition: all 0.3s;
+}
+.hero-btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+@media (min-width: 540px) {
+  .hero-btn {
+    padding: 1rem 6rem;
+    border-radius: 0.5rem;
+  }
+}
+
+/* Testimonials */
+
+.testimonials {
+  background-image: url("https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* swipper */
+
+.testimonials-slide {
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.386);
+}

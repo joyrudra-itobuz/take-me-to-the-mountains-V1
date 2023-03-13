@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>JS Trigger</title>
+  </head>
+  <body>
+    <nav
+      class="p-2 text-white md:flex md:justify-between md:px-60 md:items-start"
+    >
+      <div class="flex justify-between">
+        <a href="" class="my-auto main-icon"
+          ><img src="./assets/images/js-icon.svg" class="w-12 h-12" alt=""
+        /></a>
+        <button class="my-auto w-16 h-16 md:hidden menu-btn">
+          <img src="./assets/images/hamburger.svg" alt="" />
+        </button>
+      </div>
+      <div class="md:my-auto menu-container hidden md:block">
+        <ul
+          class="flex flex-col items-center gap-10 text-2xl pb-10 md:pb-0 md:text-xl md:gap-6 md:flex-row md:items-start"
+        >
+          <a href="">
+            <li>Home</li>
+          </a>
+
+          <li class="list-dropdown-tech">
+            <div class="flex gap-2">
+              <p>Technologies</p>
+              <button href="" class="m-auto tech-dropdown-btn">
+                <img
+                  src="./assets/images/dropdown-icon.png"
+                  class="w-5 h-5 tech-dropdown-icon"
+                  alt=""
+                />
+              </button>
+            </div>
+            <ul
+              class="text-lg flex flex-col items-center mt-2 hidden tech-dropdown"
+            >
+              <a href=""> <li>JavaScript</li> </a
+              ><a href=""> <li>HTML</li> </a
+              ><a href=""> <li>CSS</li> </a
+              ><a href=""> <li>GSAP</li> </a
+              ><a href="">
+                <li>Tailwind CSS</li>
+              </a>
+            </ul>
+          </li>
+
+          <a href="">
+            <li>About</li>
+          </a>
+          <a href="">
+            <li>Blog</li>
+          </a>
+          <a href="">
+            <li>Contact</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+    <section class="mt-20 text-white hero pl-10 md:pl-20">
+      <div class="flex flex-col justify-end mt-auto h-[100%] gap-20">
+        <p class="text-[70px] md:text-[120px]">Take Me To The Mountains</p>
+        <div class="flex gap-10 text-xl md:text-3xl md:gap-40">
+          <button class="hero-btn">Pre-Book</button>
+          <button class="hero-btn">Take Me Now</button>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials my-24 p-14 md:my-36 text-white">
+      <h2 class="text-center p-5 text-[3rem] my-5">
+        What Our Customers Have to Say!
+      </h2>
+      <div class="swiper mySwiper">
+        <div
+          class="carousel-containers text-[1rem] md:text-[1.5rem] flex swiper-wrapper"
+        >
+          <div
+            class="flex flex-col items-center gap-5 swiper-slide p-5 rounded-xl testimonials-slide"
+          >
+            <a href="" class=""
+              ><span
+                class="block p-5 rounded-[100%] w-20 h-20"
+                style="
+                  background-image: url('https://images.pexels.com/photos/1933873/pexels-photo-1933873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              ></span
+            ></a>
+            <a href="#" class="underline text-center">James Holmes</a>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor
+              distinctio explicabo velit fugit eaque necessitatibus sed earum
+              est eveniet.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-5 swiper-slide p-5 rounded-xl testimonials-slide"
+          >
+            <a href="" class=""
+              ><span
+                class="block p-5 rounded-[100%] w-20 h-20"
+                style="
+                  background-image: url('https://images.pexels.com/photos/428328/pexels-photo-428328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              ></span
+            ></a>
+            <a href="#" class="underline">Mark Hover</a>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor
+              distinctio explicabo velit fugit eaque necessitatibus sed earum
+              est eveniet.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-5 swiper-slide p-5 rounded-xl testimonials-slide"
+          >
+            <a href="" class=""
+              ><span
+                class="block p-5 rounded-[100%] w-20 h-20"
+                style="
+                  background-image: url('https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              ></span
+            ></a>
+            <a href="#" class="underline">Mark Hover</a>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor
+              distinctio explicabo velit fugit eaque necessitatibus sed earum
+              est eveniet.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-5 swiper-slide p-5 rounded-xl testimonials-slide"
+          >
+            <a href="" class=""
+              ><span
+                class="block p-5 rounded-[100%] w-20 h-20"
+                style="
+                  background-image: url('https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              ></span
+            ></a>
+            <a href="#" class="underline">Mark Hover</a>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor
+              distinctio explicabo velit fugit eaque necessitatibus sed earum
+              est eveniet.
+            </p>
+          </div>
+          <div
+            class="flex flex-col items-center gap-5 swiper-slide p-5 rounded-xl testimonials-slide"
+          >
+            <a href="" class=""
+              ><span
+                class="block p-5 rounded-[100%] w-20 h-20"
+                style="
+                  background-image: url('https://images.pexels.com/photos/247322/pexels-photo-247322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                "
+              ></span
+            ></a>
+            <a href="#" class="underline">Mark Hover</a>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor
+              distinctio explicabo velit fugit eaque necessitatibus sed earum
+              est eveniet.
+            </p>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="flex flex-col my-10 md:flex-row md:justify-center">
+        <div>
+          <img
+            src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+        </div>
+        <div class="bg-white text-slate-800 text-2xl py-5 my-10 bg-opacity-75">
+          <div class="flex justify-between px-5 md:justify-start md:gap-10">
+            <a href=""
+              ><span
+                class="w-40 h-40 block rounded-[50%]"
+                style="
+                  background-image: url('https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+                  background-size: cover;
+                  background-position: -20%;
+                "
+              ></span
+            ></a>
+            <div class="my-auto">
+              <h2 class="text-cyan-800">Joy Sinha</h2>
+              <p class="text-sm">Senior Forest Researcher</p>
+            </div>
+          </div>
+          <p class="text-green-900 px-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ex
+            aperiam in quaerat dolorum accusantium ipsum iure repellendus
+            nostrum laboriosam doloremque maiores vel? Magni, harum molestiae
+            qui unde quisquam rerum. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quo tempora ullam, obcaecati saepe labore expedita
+            harum veniam eveniet sequi sit accusantium quidem accusamus dolores
+            molestias excepturi optio nulla nostrum quasi dolor at,
+            exercitationem dolorem. Quisquam iure debitis libero aperiam
+            blanditiis.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

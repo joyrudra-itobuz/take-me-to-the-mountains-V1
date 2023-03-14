@@ -87,7 +87,6 @@ nav ul a:hover {
 .menu-btn-animation {
   animation-name: menu-btn-rotate;
   animation-duration: 0.5s;
-  animation-iteration-count: infinite;
 }
 
 @keyframes menu-btn-rotate {
@@ -221,4 +220,9 @@ nav ul a:hover {
 html body section .reserve-your-seat-input {
   all: unset;
   border-bottom: 2px solid green;
+}
+
+.reserve-input {
+  all: unset;
+  background-color: transparent !important;
 }

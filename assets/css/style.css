@@ -20,7 +20,7 @@ font-family: "Work Sans", sans-serif; */
 body {
   font-family: "Work Sans", sans-serif;
   background-image: url("https://images.pexels.com/photos/1670187/pexels-photo-1670187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-  background-size: 560px;
+  background-size: 1024px;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -87,6 +87,7 @@ nav ul a:hover {
 .menu-btn-animation {
   animation-name: menu-btn-rotate;
   animation-duration: 0.5s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes menu-btn-rotate {
@@ -164,38 +165,13 @@ nav ul a:hover {
   transition: all 2s;
 }
 .pre-book-after-clicked {
-  background-color: rgb(0, 140, 72) !important;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 162, 54);
   animation-name: pre-book-after-clicked;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 @keyframes pre-book-animation {
-  /* 0% {
-    transform: scale(1);
-    opacity: 1;
-  } */
-  /* 25% {
-    transform: translateX(-20%) scale(1.5);
-    opacity: 0.7;
-  }
-
-  75% {
-    transform: translateX(100%) scale(1.5);
-    opacity: 0.7;
-  } */
-  /* 33% {
-    transform: scale(1);
-    opacity: 1;
-  } */
-  /* 50% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  } */
   0% {
     transform: translateX(-200%) scale(1.2);
   }
@@ -230,4 +206,19 @@ nav ul a:hover {
 .testimonials-slide {
   border: 2px solid white;
   background-color: rgba(255, 255, 255, 0.386);
+}
+
+/* Fingertips Section */
+
+.fingertips-slide {
+  border: 10px solid rgba(130, 255, 222, 0.533);
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  /* border-top-right-radius: 2rem; */
+  /* border-bottom-left-radius: 2rem; */
+}
+
+html body section .reserve-your-seat-input {
+  all: unset;
+  border-bottom: 2px solid green;
 }

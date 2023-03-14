@@ -29,12 +29,18 @@ mainIcon.addEventListener("mouseleave", () => {
   mainIcon.classList.toggle("main-icon-animation");
 });
 
-// mainIcon.onfocus = () => {
-//   mainIcon.classList.toggle("main-icon-animation");
-// };
-// mainIcon.onblur = () => {
-//   mainIcon.classList.toggle("main-icon-animation");
-// };
+//Hero
+
+const preBookBtn = document.querySelector(".pre-book-btn");
+
+preBookBtn.addEventListener("click", () => {
+  preBookBtn.classList.add("pre-book-animation");
+  preBookBtn.innerHTML = "BOOKED!";
+
+  setTimeout(() => {
+    preBookBtn.classList.add("pre-book-after-clicked");
+  }, 1000);
+});
 
 //Carousel
 var swiper = new Swiper(".mySwiper", {
